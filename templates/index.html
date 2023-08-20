@@ -19,10 +19,18 @@
     
     <div class="container">
         <form method="post">
-            <label for="command">Enter a command:</label>
-            <input type="text" class="form-control" name="command" placeholder="Access Terminal"> <br>
-            <button type="submit" class="custom-button">Run</button>
+            <label for="command">Enter a command:</label> <br>
+            <div style="display: inline-flex;">
+                <input type="text" class="form-control" name="command" placeholder="Access Terminal" style="margin-right: 2%;">
+                <button type="submit" class="custom-button">Run</button>
+            </div> 
+
         </form>
+        <br>
+        <form method="post">
+            <button type="submit" class="custom-button" name="command" value="rundll32.exe user32.dll,LockWorkStation">Lock Computer</button>
+        </form>
+
     </div>
     
     {% if result %}
