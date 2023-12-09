@@ -12,7 +12,7 @@
         <form method="post" action="{{url_for('message')}}">
             <input type="hidden" name="message"  value="msg %username%">
             <label for="message">Send Message:</label>
-            <input type="text" class="form-control" name="messageContent"> <br>
+            <input type="text" class="form-control" name="messageContent" placeholder="May not work on 32-bit systems"> <br>
             <button type="submit" class="custom-button">Send</button>
         </form>
     </div>
